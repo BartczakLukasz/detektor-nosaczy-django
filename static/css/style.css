@@ -1,0 +1,75 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+	position: relative;
+    min-height: 100%;
+
+    margin: 0;
+
+    padding-bottom: 4rem;
+
+    font-family: 'Garamond', "Times New Roman", serif;
+	font-weight: 200;
+	font-size: 16px
+
+	color: black;
+	background-color: #ffaabb;
+}
+
+p, hi, h2, h3, h4, h5, h6, a {
+	color: black;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: green;
+}
+
+.sub-header {
+    background-color: white;
+    text-align: center;
+}
+
+.sub-header h1 {
+    margin: 0px;
+    padding: 20px;
+    color: #ddaaaa;
+}
+
+.content {
+	padding: 10px;
+	text-align: center;
+}
+
+.sub-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #679911;
+
+    font-size: 18px;
+	text-align: center;
+	padding: 12px;
+}
+
+.sub-footer span, .sub-footer a {
+	color: white;
+}
+.sub-footer a {
+    font-weight: bold;
+}
+.sub-footer a:hover, .copyright a:active {
+    font-weight: bold;
+    color: yellow;
