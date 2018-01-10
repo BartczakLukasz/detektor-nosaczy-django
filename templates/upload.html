@@ -1,0 +1,27 @@
+﻿{% extends 'base.html' %}
+
+{% block title %}Detekcja nosaczy{% endblock %}
+
+{% block content %}
+
+<h2>Wynik detekcji...</h2>
+
+<div>
+{% if success %}
+    <p>Zdjęcie zostało załadowane.</p>
+
+    <div style="display: inline-block;">
+        <img class="img-responsive" src="{{ image2 }}">
+    </div>
+{% else %}
+    <p>{{ error_msg }}</p>
+{% endif %}
+</div>
+
+<br>
+
+<div>
+    <a class="btn btn-default" href="/">Wróćt</a>
+</div>
+
+{% endblock %}

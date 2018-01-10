@@ -1,0 +1,25 @@
+﻿{% extends 'base.html' %}
+
+{% block title %}Detektor Nosaczy - Strona główna{% endblock %}
+
+{% block content %}
+
+<style>
+    input[type=file] { margin: auto; }
+    .choose-file { padding: 20px; }
+</style>
+
+<h2>Podaj obrazek do sprawdzenia:</h2>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class="choose-file">
+        <input type="file" name="uploaded_file" required>
+    </div>
+
+    <input class="btn btn-success" type="submit" value="Załaduj zdjęcie">
+
+</form>
+
+{% endblock %}
